@@ -26,7 +26,7 @@ paginate = 5
 	title = "Moving With Automation"
 	subtitle = "MY Test Automation Journey"
 	# Header Title for the main page
-	header = "What I'm Thinking"
+	header = "My Recent Blogs"
 
 	# Social buttons for sidebar
 	# Each of these are optional
