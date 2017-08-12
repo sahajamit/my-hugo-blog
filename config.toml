@@ -1,0 +1,51 @@
+baseurl = "http://sahajamit.com/"
+theme = "hugo-geo"
+themesdir = "./themes"
+relativeURLs = false
+languageCode = "en-us"
+title = "My New Hugo Site"
+disqusShortname = "sahajamit"
+paginate = 5
+
+[taxonomies]
+	tag = "tags"
+	tutorial = "tutorials"
+
+
+[params]
+	showglobe = false
+
+	favicon = "favicon.ico"
+
+	analytics = "UA-73743634-1"
+
+	email = "sahajamit@gmail.com"
+
+	profilepic = "img/profile.png"
+
+	title = "Moving With Automation"
+	subtitle = "MY Test Automation Journey"
+	# Header Title for the main page
+	header = "What I'm Thinking"
+
+	# Social buttons for sidebar
+	# Each of these are optional
+	[[params.socialbuttons]]
+	faicon = "github"
+	url = "https://github.com/sahajamit"
+	[[params.socialbuttons]]
+	faicon = "twitter"
+	url = "https://www.twitter.com/sahajamit"
+	[[params.socialbuttons]]
+	faicon = "linkedin"
+	url = "https://www.linkedin.com/in/amit-rawat-3530566"
+	[[params.socialbuttons]]
+
+
+	[[params.navlinks]]
+	name = "About"
+	url = "about"
+
+	[[params.navlinks]]
+	name = "Blog"
+	url = "post/"
