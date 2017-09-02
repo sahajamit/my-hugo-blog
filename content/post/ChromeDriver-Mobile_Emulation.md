@@ -3,7 +3,7 @@ date = "2015-06-28T09:32:45-04:00"
 draft = false
 highlight = true
 title = "Mobile Emulation In Chromedriver"
-tags = ["blog", "selenium"]
+tags = ["chromedriver", "selenium", "mobile"]
 +++
 
 ChromeDriver 2.11 release has the mobile emulation support using Chrome Dev Tools. I have been waiting for this feature since long.

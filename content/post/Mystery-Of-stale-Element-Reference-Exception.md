@@ -3,7 +3,7 @@ date = "2017-07-28T09:32:45-04:00"
 draft = false
 highlight = true
 title = "Mystery of StaleElementReferenceException in Selenium WebDriver"
-tags = ["blog", "selenium"]
+tags = ["java", "selenium", "webdriver"]
 +++
 
 If you are a Selenium developer than you would have surely faced this mysterious exception called "**StaleElementReferenceException**"
