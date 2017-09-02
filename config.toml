@@ -25,10 +25,10 @@ disqusShortname = "sahajamit"
 
 [params]
 	# Appears in sidebar
-    # profilepic = "img/profile.png"
+    profilepic = "img/cutmypic.png"
 
     # Appears in sidebar - optional
-    subtitle = "My Test Automation Journey"
+    subtitle = ""
 
 	# Appears on index page - optional
     tagline = "My Recent Blogs"
