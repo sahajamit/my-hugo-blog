@@ -1,53 +1,127 @@
-baseurl = "http://example.com/"
-theme = "hugo-geo"
-themesdir = "../.."
+baseurl = "http://replace-this-with-your-hugo-site.com/"
 relativeURLs = false
 languageCode = "en-us"
-title = "My New Hugo Site"
-disqusShortname = "shortcode-here"
+
+# Shown in page title and left sidebar
+title = "Your Name"
+
+# Shown in the footer
+copyright = "2001 - 2017"
+theme = "hugo-geo"
 paginate = 5
+googleAnalytics = "code-here"
+disqusShortname = "shortcode-here"
+
+# Author appears in the footer
+[author]
+    name = "My Name Here"
 
 [taxonomies]
-	tag = "tags"
-	tutorial = "tutorials"
+    tag = "tags"
 
 [params]
-	showglobe = true
+    # Appears in sidebar
+    profilepic = "img/profile.png"
 
-	favicon = "favicon.ico"
-	
-	analytics = "code-here"
+    # Appears in sidebar - optional
+    subtitle = "My Hugo Blog"
 
-	email = "alexurquhart@gmail.com"
+    # Appears on index page - optional
+    tagline = "What I'm Thinking"
+    
+    # Whether to show theme credits in the footer - Optional
+    attribution = true
 
-	profilepic = "img/profile.png"
-	
-	title = "MY NAME"
-	subtitle = "MY HUGO BLOG"
+    # URL for twitter feed widget in the sidebar for posts - optional
+    twitterwidgeturl = "https://twitter.com/alexanderurq"
 
-	# Social buttons for sidebar
-	# Each of these are optional
-	[[params.socialbuttons]]
-	faicon = "github"
-	url = "https://github.com/alexurquhart"
-	[[params.socialbuttons]]
-	faicon = "twitter"
-	url = "https://twitter.com/alexanderurq"
-	[[params.socialbuttons]]
-	faicon = "linkedin"
-	url = "https://linkedin.com"
-	[[params.socialbuttons]]
-	faicon = "google-plus"
-	url = "https://plus.google.com/+YourID"
+    # Array of all available social share buttons - optional
+    sharebuttons = [
+        "email",
+        "print",
+        "rss",
+        "facebook",
+        "twitter",
+        "linkedin",
+        "reddit",
+        "googleplus"
+    ]
 
-	[[params.navlinks]]
-	name = "About"
-	url = "about"
-	
-	[[params.navlinks]]
-	name = "Blog"
-	url = ""
-	
-	[[params.navlinks]]
-	name = "Tutorials"
-	url = "tutorial/"
+    # Array of additional CSS files to be loaded on every page - optional
+    css = []
+
+    # Array of additional Javascript files to be loaded on every page
+    scripts = []
+
+    # Locale information to be specified in Open Graph meta tags - optional
+    # See http://ogp.me/
+    oglocale = "en_US"
+
+    # For use with Facebook Developer Insights - optional
+    # See https://developers.facebook.com/docs/platforminsights/domains
+    fbappid = "App-Id-Here"
+
+    # For use with Open Graph meta tags - optional
+    # Can be overridden by post front matter
+    metaimage = "/path/to/image"
+
+    # Twitter account of the author, and website - optional
+    # See https://dev.twitter.com/cards/getting-started
+    twittercreator = "@alexanderurq"
+    twittersite = "@alexanderurq"
+
+    # Color of browser bar on mobile sites - optional
+    # Be sure to update if you tweak the site CSS
+    themecolor = "#2d4054"
+
+# Left hand sidebar and mobile nav link menu
+# Add or remove links as you see fit
+[[menu.sidenav]]
+    name = "Blog"
+    identifier = "blog"
+    url = "/"
+    weight = -1
+[[menu.sidenav]]
+    name = "Tutorials"
+    identifier = "tutorials"
+    url = "/tutorial/"
+    weight = 1
+
+# Social sharing icons for left hand sidebar
+# Links here appear in the footer on mobile
+# Add or remove as you see fit
+[[menu.social]]    
+    name = "GitHub"
+    url = "https://www.github.com/alexurquhart"
+    pre = '<i class="fa fa-github" aria-hidden="true"></i>'
+    weight = 0
+
+[[menu.social]]
+    name = "Twitter"
+    url = "https://twitter.com/alexanderurq"
+    pre = '<i class="fa fa-twitter" aria-hidden="true"></i>'
+    weight = 1
+
+[[menu.social]]    
+    name = "E-Mail"
+    url = "mailto:alexurquhart@gmail.com"
+    pre = '<i class="fa fa-envelope-o" aria-hidden="true"></i>'
+    weight = 2
+
+[[menu.social]]    
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/alex-urquhart-65979695"
+    pre = '<i class="fa fa-linkedin" aria-hidden="true"></i>'
+    weight = 3
+
+# Righthand sidebar menu appears on posts and tutorial pages
+[[menu.sidebar]]
+    pre = '<img src="/img/do.png" class="responsive pure-img">'
+    url = "https://m.do.co/c/78ae6b852549"
+
+[[menu.footer]]
+    name = "Link 1"
+    url = "#"
+[[menu.footer]]
+    name = "Link 2"
+    url = "#"

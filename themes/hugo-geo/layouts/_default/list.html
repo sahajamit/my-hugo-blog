@@ -1,15 +1,10 @@
-{{ partial "head.html" . }}
-{{ partial "nav.html" . }}
-
-<article>
-	<header>
-		<h1>{{ .Title }}</a></h1>
-	</header>
+{{ define "body" }}
+<header>
+    <h1>{{ .Title }}</a></h1>
+</header>
 <ul>
-	{{ range .Data.Pages }}
-	<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-	{{ end }}
+    {{ range .Data.Pages }}
+    {{ .Render "li" }}
+    {{ end }}
 </ul>
-</article>
-
-{{ partial "footer.html" . }}
+{{ end }}

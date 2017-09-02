@@ -1,0 +1,11 @@
+<div class="hg-summary">
+    <div class="hg-summary-body">
+        {{.Summary}}
+        {{ if .Truncated }}
+            <a href="{{ .Permalink }}">Read More</a>
+        {{ end }}
+    </div>
+    <div class="hg-summary-footer hg-muted">
+        {{ partial "taglist.html" . }}
+    </div>
+</div>
