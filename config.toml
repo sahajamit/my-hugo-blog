@@ -123,21 +123,9 @@ disqusShortname = "sahajamit"
     pre = '<img src="/img/do.png" class="responsive pure-img">'
     url = "https://m.do.co/c/78ae6b852549"
 
-[[menu.footer]]
-    name = "Link 1"
-    url = "#"
-[[menu.footer]]
-    name = "Link 2"
-    url = "#"
-
-
-
 	favicon = "favicon.ico"
 
-
 	email = "sahajamit@gmail.com"
-
-
 
 	title = "Moving With Automation"
 	subtitle = "MY Test Automation Journey"
