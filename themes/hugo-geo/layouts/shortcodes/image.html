@@ -1,0 +1,50 @@
+<!--
+Parameters
+    id - optional
+    src
+    nolightbox - set to 1 to remove lightbox
+    caption - Optional. Caption for <figcaption>, lightbox, and alt text
+    gallery - Name of lightbox gallery
+    responsive - Set to 1 to make image width 100%
+    alt - Alt text for image
+-->
+<figure {{ with .Get "id" }}id="#{{.}}" {{ end }}>
+    {{ if ne (.Get "nolightbox") "1" }}
+    <a
+            href="{{ .Get "src" }}"
+            data-title="{{ .Get "caption" }}"
+
+            {{ if .Get "gallery" }}
+                data-lightbox="{{ .Get "gallery" }}"
+            {{ else }}
+                data-lightbox="{{ .Get "src"  }}"
+            {{ end }}
+    >
+    {{ end }}
+        <img 
+            src="{{ .Get "src" }}"
+            class="
+                {{ if eq (.Get "responsive") "1" }}
+                responsive
+                {{ else }}
+                pure-img
+                {{ end }}"
+            {{ if or (.Get "caption") (.Get "alt") }}
+                {{ if not (.Get "alt") }}
+                    {{ with .Get "caption" }}
+                        alt="{{ . }}"
+                    {{ end }}
+                {{ else }}
+                    {{ with .Get "alt" }}
+                        alt="{{ . }}"
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        >
+    </a>
+    {{ with .Get "caption" }}
+    <figcaption>
+        {{ . }}
+    </figcaption>
+    {{ end }}
+</figure>

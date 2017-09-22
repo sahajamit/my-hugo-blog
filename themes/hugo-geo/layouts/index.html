@@ -1,21 +1,16 @@
-{{ partial "head.html" . }}
-{{ partial "nav.html" . }}
+{{ define "body" }}
 
-<header>
-	<!-- Check if header is not set or empty -->
-	{{ if (not (isset .Site.Params "header")) | or (eq .Site.Params.header "") }}
-		<h1>What I'm Thinking</h1>
-	{{ else }}
-		<h1>{{ .Site.Params.header }}</h1>
-	{{ end }}
-</header>
-{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Section" "post") }}
-{{ range $paginator.Pages }}
-	{{ .Render "summary"}}
+{{ if isset .Site.Params "tagline" }}
+<h1>{{ .Site.Params.tagline }}</h1>
 {{ end }}
 
-<div class="text-center center-block">
-	{{ template "_internal/pagination.html" . }}
+{{ $paginator := .Paginate (where .Data.Pages "Section" "post") }}
+{{ range $paginator.Pages }}
+   {{ .Render "summary" }}
+{{ end }}
+
+<div class="hg-pagination">
+{{ template "_internal/pagination.html" . }}
 </div>
 
-{{ partial "footer.html" . }}
+{{ end }}

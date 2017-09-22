@@ -3,7 +3,7 @@ date = "2016-08-28T09:32:45-04:00"
 draft = false
 highlight = true
 title = "Integrating cucumber-JVM with TestNG"
-tags = ["blog", "selenium"]
+tags = ["cucumber", "testng"]
 +++
 
 Cucumber-JVM has a native integration with JUnit to run the BDD scenarios. Junit is a framework which is more popular among developers to support their unit testing. When we talk about function automation testing then TestNG is a better choice as it has more advanced features. In this blog I will be taking more about the Cucumber-JVM and TestNG Integration.

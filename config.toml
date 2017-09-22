@@ -1,11 +1,22 @@
 baseurl = "http://sahajamit.com/"
 theme = "hugo-geo"
-themesdir = "./themes"
+#themesdir = "../../hugo/themes/hugo-geo-v2.0/"
 relativeURLs = false
 languageCode = "en-us"
-title = "My New Hugo Site"
-disqusShortname = "sahajamit"
+
+# Shown in page title and left sidebar
+title = "Moving With Automation"
+
+# Shown in the footer
+copyright = "2016 - 2017"
 paginate = 5
+googleAnalytics = "UA-73743634-1"
+disqusShortname = "sahajamit"
+
+# Author appears in the footer
+[author]
+    name = "Amit Rawat"
+
 
 [taxonomies]
 	tag = "tags"
@@ -13,15 +24,108 @@ paginate = 5
 
 
 [params]
-	showglobe = false
+	# Appears in sidebar
+    profilepic = "img/cutmypic.png"
+
+    # Appears in sidebar - optional
+    subtitle = ""
+
+	# Appears on index page - optional
+    tagline = "My Recent Blogs"
+
+	# Whether to show theme credits in the footer - Optional
+    attribution = true
+
+	# URL for twitter feed widget in the sidebar for posts - optional
+    twitterwidgeturl = "https://twitter.com/sahajamit"
+
+    # Array of all available social share buttons - optional
+    sharebuttons = [
+        "email",
+        "print",
+        "rss",
+        "facebook",
+        "twitter",
+        "linkedin",
+        "reddit",
+        "googleplus"
+    ]
+
+	# Array of additional CSS files to be loaded on every page - optional
+    css = []
+
+	# Array of additional Javascript files to be loaded on every page
+    scripts = []
+
+    # Locale information to be specified in Open Graph meta tags - optional
+    # See http://ogp.me/
+    oglocale = "en_US"
+
+    # For use with Facebook Developer Insights - optional
+    # See https://developers.facebook.com/docs/platforminsights/domains
+    fbappid = "App-Id-Here"
+
+    # For use with Open Graph meta tags - optional
+    # Can be overridden by post front matter
+    metaimage = "/path/to/image"
+
+    # Twitter account of the author, and website - optional
+    # See https://dev.twitter.com/cards/getting-started
+    twittercreator = "@sahajamit"
+    twittersite = "@sahajamit"
+
+	# Color of browser bar on mobile sites - optional
+    # Be sure to update if you tweak the site CSS
+    themecolor = "#2d4054"
+
+# Left hand sidebar and mobile nav link menu
+# Add or remove links as you see fit
+[[menu.sidenav]]
+    name = "Blog"
+    identifier = "blog"
+    url = "/"
+    weight = -1
+[[menu.sidenav]]
+    name = "About Me"
+    identifier = "About Me"
+    url = "/about/"
+    weight = 1
+
+# Social sharing icons for left hand sidebar
+# Links here appear in the footer on mobile
+# Add or remove as you see fit
+[[menu.social]]    
+    name = "GitHub"
+    url = "https://github.com/sahajamit"
+    pre = '<i class="fa fa-github" aria-hidden="true"></i>'
+    weight = 0
+
+[[menu.social]]
+    name = "Twitter"
+    url = "https://www.twitter.com/sahajamit"
+    pre = '<i class="fa fa-twitter" aria-hidden="true"></i>'
+    weight = 1
+
+[[menu.social]]    
+    name = "E-Mail"
+    url = "mailto:sahajamit@gmail.com"
+    pre = '<i class="fa fa-envelope-o" aria-hidden="true"></i>'
+    weight = 2
+
+[[menu.social]]    
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/amit-rawat-3530566"
+    pre = '<i class="fa fa-linkedin" aria-hidden="true"></i>'
+    weight = 3
+
+# Righthand sidebar menu appears on posts and tutorial pages
+[[menu.sidebar]]
+    pre = '<img src="/img/do.png" class="responsive pure-img">'
+    url = "https://m.do.co/c/78ae6b852549"
 
 	favicon = "favicon.ico"
 
-	analytics = "UA-73743634-1"
-
 	email = "sahajamit@gmail.com"
-
-	profilepic = "img/profile.png"
 
 	title = "Moving With Automation"
 	subtitle = "MY Test Automation Journey"

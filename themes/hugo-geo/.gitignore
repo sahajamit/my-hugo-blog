@@ -1,3 +1,5 @@
 exampleSite/themes
+exampleSite/public
 node_modules
 .vscode
+tags
