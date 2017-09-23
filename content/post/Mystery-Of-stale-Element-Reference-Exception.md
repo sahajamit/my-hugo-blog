@@ -1,5 +1,5 @@
 +++
-date = "2017-07-28T09:32:45-04:00"
+date = "2017-05-28T09:32:45-04:00"
 draft = false
 highlight = true
 title = "Mystery of StaleElementReferenceException in Selenium WebDriver"
